@@ -1,0 +1,11 @@
+.men li{
+      display: block;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    background: aquamarine;
+
+}
