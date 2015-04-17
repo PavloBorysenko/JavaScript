@@ -13,7 +13,10 @@ var buttIsk=document.getElementById('isk') ;
 var text3=document.getElementById('list3');
 var textIm=document.getElementById("textIm");
 var out=document.getElementById("rezul");
-var spis=["кот","лот","рак","лак","пак","зак","red","flex","123"];
+text1.value="";    // Это я сделал по тому что в firefox после
+text2.value="";  //обновления содержание форм не обновлялась
+text3.value="";  // глюк ли это я не знаю, но костыль работает
+var spis=["кот","лот","рак","кот","пак","зак","red","flex","123","кот","рак"];
 for(var j=0;j<spis.length;j++){
    text3.value+=spis[j]+'\n';
 };
@@ -69,5 +72,6 @@ buttIsk.onclick=function(){
  var rez=text3.value.match(new RegExp("^"+textIm.value+"$","gim"));
 
 
-     out.innerHTML=((rez=="")?'0':rez.length);
+     out.innerHTML=((rez==""||rez==null)?'0':rez.length);
+
 }

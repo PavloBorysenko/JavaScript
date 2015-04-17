@@ -1,7 +1,7 @@
 textarea {
 
     margin: 10px;
-     width: 50px !important;
+     width: 80px !important;
 }
 body{
     background: #faebcc;
@@ -24,7 +24,7 @@ h1{
 }
 button{
     margin: 0 auto;
-   margin-bottom: 20px;
+   margin-top: 10px;
 }
 .myHeader{
     height: 70px;
