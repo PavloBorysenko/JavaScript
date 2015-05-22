@@ -1,0 +1,87 @@
+ body{
+     background:url("body.jpg");
+
+ }
+ img{
+
+
+ }
+.nombre{
+    text-align: center;
+    background: #c7c2f5;
+    display: block;
+    border-radius: 10px 100px;
+
+}
+.tov img{
+
+    width: 300px;
+    margin: 5px;
+    border: 5px solid rgba(0, 8, 55, 0.08);
+    border-radius: 10px;
+    cursor: pointer;
+}
+#corz{
+    z-index: 1;
+    position: absolute;
+    position: fixed;
+    margin-left: 75%;
+    color: #ffffff;
+    display: block;
+    width: 170px;
+    height: 300px;
+    background: rgba(91, 15, 245, 0.25);
+     border: 3px solid rgba(57, 207, 255, 0.49);
+    border-radius: 10px;
+}
+.my_button{
+    color: wheat;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -50px;
+    background: rgba(56, 69, 174, 0.63);
+}
+
+
+ #result img{
+     width: 45px;
+ }
+ #result{
+     display: block;
+     height: 150px;
+     overflow: auto;
+     border: 2px solid #000000 ;
+ }
+ #ikon .glyphicon  {
+     margin-left: 35%;
+     color: rgba(193, 15, 255, 0.46);
+     font-size: 40px;
+ }
+ #clara{
+
+     margin-left: 20px;
+     cursor: pointer;
+     color: rgba(255, 83, 222, 0.44);
+ }
+ #up{
+     margin-left: 20px;
+     cursor: pointer;
+     color: rgba(255, 83, 222, 0.44);
+ }
+  .men .glyphicon{
+       margin-top: 15px;
+     color: rgba(255, 83, 222, 0.44);
+     font-size: 14px;
+ }
+ .op{
+
+     position: absolute;
+     display: block;
+   display: none;
+     width: 96%;
+     border: 5px solid rgba(0, 8, 55, 0.5);
+     border-radius: 10px;
+     background: rgba(207, 182, 255, 0.33);
+     margin-top: -9px;
+
+ }

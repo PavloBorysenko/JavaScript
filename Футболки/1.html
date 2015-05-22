@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet"  href="Style.css"/>
+    <title>Script</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="jquery-2.1.1.min.js"></script>
+    <!--<script src="Script.js"></script>-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul>li{
+            height: 80px;
+            width: 200px;
+            background: yellowgreen;
+            margin: 2px;
+            text-align: center;
+
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        button{
+            margin-left: 40px;
+            width: 100px;
+        }
+        
+        .price{
+            height: 40px;
+            background: #3167ff;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+        input[type=text]{
+            margin: 10px 0 0 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Travel Dest:</h2>
+
+<ul class="dest" data-price="800">
+    <li>
+        <h2>Rome</h2>
+    </li>
+   <li><button class="btn btn-default"> buy </button></li>
+</ul>
+<ul class="dest" data-price="400">
+    <li>
+        <h2>Kiev</h2>
+    </li>
+   <li>
+       <button class="btn btn-default"> buy </button>
+       <input type="button" id="c" class="btn btn-default" value="change">
+   </li>
+</ul>
+<label for="sum">Ticket price</label>
+
+<input id="sum" type="text" class="form-control" />
+<button class="btn btn-default"> MyB </button>
+
+
+
+<script>
+    $(document).ready(function () {
+
+        //$("#dest").text("Hello");
+        //$(".promo").text("Hello")
+
+        //$("#dest>li").text("Hello");
+        //$("#dest li:last").text("Hello");
+        //$("#dest li:odd").text("Hello");
+        //$("#dest").find("li").text("Hello");
+        //$("li").first().next().text("Hello");
+        //$("li").last().prev().text("Hello");
+
+        //$(".g").parent().css("background","red");
+
+        //$("#dest").children("li").css("color", "blue");
+
+/*        var price = $("<div class='price'>$123</div>");
+        $(".dest").find("li:first").append(price);*/
+
+
+        $(".dest").on('click', 'button' , function () {
+            //$(this).after($("<span>Sold</span>"));
+            //$(".dest").append($("<span>Sold</span>"));
+            //$(this).closest(".dest").append($("<span>Sold</span>"));
+            //$(this).remove();
+            //var price = $(this).closest(".dest").data("price");
+            var price = $(this).closest(".dest").attr("data-price");
+            $("#sum").val(price);
+        });
+
+        $("input[type=button]").on('click', function () {
+            $(this).closest(".dest").attr("data-price", "1200");
+        });
+        //$("#btn").remove();
+
+    });
+</script>
+</body>
+</html>
