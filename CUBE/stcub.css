@@ -1,0 +1,77 @@
+body{
+      background: #b8d9d3 url("http://www.motto.net.ua/old_site//img/textures/1283882661_C1F3ECE0E6EDFBE920F4EEED203037203037.jpg");
+
+}
+    #pole{
+        -webkit-perspective: 1200px;
+        -moz-perspective: 1200px;
+        -ms-perspective: 1200px;
+        perspective: 1200px;
+        margin-left: 25%;
+        margin-top: 50px ;
+    }
+
+#cube{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    -webkit-transform-origin: 50% 50% -300px;
+    -moz-transform-origin: 50% 50% -300px;
+    -ms-transform-origin: 50% 50% -300px;
+    -o-transform-origin: 50% 50% -300px;
+    transform-origin: 50% 50% -300px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+ .side{
+         width: 600px;
+         height: 600px;
+          position: absolute;
+
+         border:5px solid #97c6d9;
+        -webkit-transform-origin: 50% 50% -300px;
+        -moz-transform-origin: 50% 50% -300px;
+        -ms-transform-origin: 50% 50% -300px;
+        -o-transform-origin: 50% 50% -300px;
+        transform-origin: 50% 50%  -300px;
+
+
+ }
+  #side2{
+         -webkit-transform:rotateY(90deg);
+         -moz-transform:rotateY(90deg);
+         -ms-transform:rotateY(90deg);
+         -o-transform:rotateY(90deg);
+         transform:rotateY(90deg);
+     }
+#side3{
+    -webkit-transform:rotateY(-90deg);
+    -moz-transform:rotateY(-90deg);
+    -ms-transform:rotateY(-90deg);
+    -o-transform:rotateY(-90deg);
+    transform:rotateY(-90deg);
+}
+#side4{
+    -webkit-transform:rotateX(90deg);
+    -moz-transform:rotateX(90deg);
+    -ms-transform:rotateX(90deg);
+    -o-transform:rotateX(90deg);
+    transform:rotateX(90deg);
+}
+#side5{
+    -webkit-transform:rotateX(-90deg);
+    -moz-transform:rotateX(-90deg);
+    -ms-transform:rotateX(-90deg);
+    -o-transform:rotateX(-90deg);
+    transform:rotateX(-90deg);
+}
+#side6{
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(1800deg);
+    transform:rotateY(180deg);
+}

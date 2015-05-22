@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CSS cube TEST</title>
+    <link rel="stylesheet" href="stcub.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="pole">
+    <div id="cube">
+        <div class="side" id="side1"> <a href="http://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0" target="_blank" >
+            <img src="bar.jpg"></a></div>
+        <div class="side" id="side2"> <a href="http://en.wikipedia.org/wiki/Aquarium_Barcelona" target="_blank"><img src="aqua.jpg"></a></div>
+        <div class="side" id="side3"> <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D0%B8" target="_blank">
+            <img src="cit1.jpg"></a></div>
+        <div class="side" id="side4"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA_%D0%93%D1%83%D1%8D%D0%BB%D1%8F" target="_blank">
+            <img src="guel1.jpg"></a></div>
+        <div class="side" id="side5"><a href="https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B0_%28%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%29" target="_blank">
+            <img src="sag1.jpg"></a></div>
+        <div class="side" id="side6"> <a href="https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%A1%D0%B5%D1%80%D0%B4%D1%86%D0%B0_%28%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0%29" target="_blank">
+            <img src="tib1.jpg"></a></div>
+    </div>
+          <script src="http://cdjs.cloudflare.com/ajax/libs/jquery.min.js"></script>
+    <script>
+               $(function() {
+                   $(document).mousemove(function(e){
+                       $('#cube').css({
+                           '-webkit-transform':'rotateX('+ e.pageY+'deg)rotateY('+ e.pageX+'deg)'
+                       });
+                   });
+               });
+
+    </script>
+
+</div>
+</body>
+</html>
